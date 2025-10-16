@@ -1,0 +1,598 @@
+/*
+    디자인 파일(css)
+    - <style> 내부에 작성하는 디자인 코드만 보관하는 파일
+    - html에서 불러올때는 <link> 태그를 사용
+    - html 파일에서 이 디자인 파일을 불러오면 자동으로 대상을 찾아서 디자인을 적용
+    - 홈페이지에서 자주 사용하는 디자인 코드를 모아서 이곳에 저장
+*/
+div {
+    box-shadow: 0 0 1px 0 grey;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* 비율 지정 */
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* 크기 지정*/
+.w-150 {
+    width: 150px;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.w-350 {
+    width: 350px;
+}
+
+.w-400 {
+    width: 400px;
+}
+
+.w-450 {
+    width: 450px;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+.w-550 {
+    width: 550px;
+}
+
+.w-600 {
+    width: 600px;
+}
+
+.w-650 {
+    width: 650px;
+}
+
+.w-700 {
+    width: 700px;
+}
+
+.w-750 {
+    width: 750px;
+}
+
+.w-800 {
+    width: 800px;
+}
+
+.w-850 {
+    width: 850px;
+}
+
+.w-900 {
+    width: 900px;
+}
+
+.w-950 {
+    width: 950px;
+}
+
+.w-1000 {
+    width: 1000px;
+}
+
+.w-1050 {
+    width: 1050px;
+}
+
+.w-1100 {
+    width: 1100px;
+}
+
+.cell {
+    margin: 10px 0;
+}
+
+/* 여백을 모듈화 시켜서 클래스로 구현
+    - 여백에는 방향이 존재(top, bottom, left, right)
+    - 클래스에 방향까지 지정 가능하도록 규격화 시켜 처리
+*/
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.ms-0 {
+    margin-left: 0px;
+}
+
+.ms-10 {
+    margin-left: 10px;
+}
+
+.ms-20 {
+    margin-left: 20px;
+}
+
+.ms-30 {
+    margin-left: 30px;
+}
+
+.ms-40 {
+    margin-left: 40px;
+}
+
+.ms-50 {
+    margin-left: 50px;
+}
+
+.me-0 {
+    margin-right: 0px;
+}
+
+.me-10 {
+    margin-right: 10px;
+}
+
+.me-20 {
+    margin-right: 20px;
+}
+
+.me-30 {
+    margin-right: 30px;
+}
+
+.me-40 {
+    margin-right: 40px;
+}
+
+.me-50 {
+    margin-right: 50px;
+}
+
+/* 정렬 스타일 */
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/* 
+    입력창 디자인(input/select/textarea)
+ */
+.field {
+    outline: none;
+    /* 기본 강조효과 제거 */
+    font-size: 16px;
+    /* 기본 글자크기 지정 */
+    padding: 0.5em 0.75em;
+    border: 1px solid #b2bec3;
+    border-radius: 0.1em;
+}
+
+.field:focus {
+    border-color: #2d3436;
+}
+
+textarea.field {
+    resize: vertical;
+}
+
+/* 이미지가 포함된 입력창 배치 */
+.field.field-image {
+    padding-left: 3em;
+    background-size: 2em 1.5em;
+    background-repeat: no-repeat;
+    background-position: 0.5em center;
+}
+
+/* 
+버튼 디자인
+    - a태그와 button을 동일하게 디자인
+    - 버튼마다 역할이 다름
+        - 긍정버튼 : 현재 페이지의 목적을 달성할 수 있거나 긍정적인 영향을 주는 작업 버튼
+        - 부정버튼 : 현재 페이지의 목적이 부정적인 경우(수정/삭제)
+        - 중립버튼 : 현재 페이지의 목적과 관계없는 작업 버튼
+*/
+.btn {
+    outline: none;
+    font-size: 16px;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+    border: 1px solid #636e72;
+    border-radius: 0.1em;
+    /* a태그까지 고려한 디자인 추가 */
+    text-decoration: none;
+    color: #2d3436;
+    background-color: #b2bec3;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    filter: brightness(95%);
+}
+
+.btn.btn-positive {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    color: white;
+}
+
+.btn.btn-negative {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: white;
+}
+
+.btn.btn-neutral {
+    background-color: #7f8c8d;
+    border-color: #7f8c8d;
+    color: white;
+}
+
+/*
+    글자 색상 클래스
+*/
+
+.red {
+    color: #c0392b
+}
+
+.orange {
+    color: #e67e22
+}
+
+.yellow {
+    color: #f1c40f
+}
+
+.green {
+    color: #32cd32
+}
+
+.blue {
+    color: #0984e3
+}
+
+.purple {
+    color: #8e44ad
+}
+
+.black {
+    color: #1e272e
+}
+
+.gray {
+    color: #808e9b
+}
+
+.white {
+    color: #ecf0f1
+}
+
+/* 
+    테이블 디자인 
+    - 모든 태그에 클래스를 붙일 수 없기 때문에 탐색을 통해서 태그를 찾아야 한다
+    - 자식 선택자 (>) 를 이용하면 대상의 바로 아래 있는 태그를 찾을 수 있다
+    - 후손 선택자 (  ) 를 이용하면 대상의 내부에 있는 태그를 포괄적으로 찾을 수 있다
+    - 테이블이 중첩될 수 있기 때문에 다소 길더라도 자식 선택자를 사용하는 것을 권장
+*/
+.table {
+    /* border: 1px solid #636e72; */
+    border-collapse: collapse;
+    font-size: 16px;
+    font-weight: 400 !important;
+}
+
+.table>thead>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>th,
+.table>tbody>tr>td,
+.table>tfoot>tr>th,
+.table>tfoot>tr>td {
+    /* border: 1px solid #636e72; */
+    font-size: inherit;
+    /* 가장 가까운 외부영역의 규칙을 따라라! (지금은 table) */
+    font-weight: inherit;
+    /* 가장 가까운 외부영역의 규칙을 따라라! (지금은 table) */
+    text-align: center;
+    padding: 0.25em;
+}
+
+/* 확장 스타일 1번 - 테두리가 있는 테이블 */
+.table.table-border,
+.table.table-border>thead>tr>th,
+.table.table-border>thead>tr>td,
+.table.table-border>tbody>tr>th,
+.table.table-border>tbody>tr>td,
+.table.table-border>tfoot>tr>th,
+.table.table-border>tfoot>tr>td {
+    border: 1px solid #636e72;
+}
+
+/* 확장 스타일 2번 - 마우스에 반응하는 테이블 */
+.table.table-hover>tbody>tr:hover {
+    background-color: #dfe6e9 !important;
+}
+
+/* 
+    확장 스타일 3번 - 줄무늬 테이블 
+    - nth-child는 순서와 패턴을 지정할 때 사용
+    - n이라는 글자를 쓰면 n=1,2,3,4,5,.. 로 변하며 적용
+*/
+.table.table-striped>thead>tr {
+    background-color: #dfe6e9;
+}
+
+.table.table-striped>tbody>tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+/* 페이지 네비게이터 디자인 */
+.pagination {
+    text-align: center;
+    font-size: 16px;
+}
+
+.pagination>a {
+    text-decoration: none;
+    color: #2d3436;
+    padding: 0.5em;
+    display: inline-block;
+    min-width: 2.5em;
+    /* border: 1px solid transparent; */
+}
+
+.pagination>a:hover,
+.pagination>a.on {
+    /* border: 1px solid #2d3436; */
+    /* box-shadow: x y b s color; */
+    box-shadow: 0 0 2px 1px #2d3436;
+}
+
+/*
+	뱃지(Badge) 스타일
+*/
+.badge {
+    border: 1px solid #2d3436;
+    border-radius: 100px;
+    padding: 0 0.25em;
+}
+
+/*
+floatbox 디자인
+    - float는 좌/우 원하는 곳에 손쉽게 배치하는 속성
+    - 일반 디자인과는 어울리기가 힘듦
+    - 독자적인 영역(float-box)을 만들어서 자동초기화
+    - 가상의 영역을 선택하여 실제 영역처럼 사용(가상선택지점)
+    - ::before는 시작 지점
+    - ::after는 종료 지점
+    - 생성을 먼저 해야함(content 속성)
+*/
+.float-box>.float-left {
+    float: left;
+}
+
+.float-box>.float-right {
+    float: right;
+}
+
+.float-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.inline-flex-box {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+/* 세로형 배치를 원할 경우 */
+.flex-box.flex-vertical,
+.inline-flex-box.flex-vertical {
+    flex-direction: column;
+}
+
+/* 플렉스 배치 내에서 나머지를 모두 차지 */
+.flex-box>.flex-fill,
+.inline-flex-box>.flex-fill {
+    flex-grow: 1;
+}
+
+
+/* 크기가 충분할 경울 정가운데 배치 */
+.flex-box.flex-center,
+.inline-flex-box.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* 기본 메뉴 디자인 */
+/* .menu > .left-menu:last-child {
+     margin-right: auto;
+}
+.menu > .right-menu:first-child {
+    margin-left: auto;
+} */
+
+.menu>.divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    background-color: #32cd32;
+    display: flex;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.5em;
+
+
+}
+
+.menu>a:hover {
+    background-color: #35dd35;
+}
+
+/* 말줄임표 설정 클래스 */
+.ellipsis {
+    /* 
+    혹시라도 넘어가면 말줄임표 처리
+    - 반드시 세가지 속성이 모두 존재하야함
+    - 폭(width), 넘침(overflow), 글자 넘침(overflow), 줄바꿈(whitespace)
+    */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.fullscreen {
+    /* HTML의 기본 배치방식을 무시하고 내가 원하는 방식으로 위치를 지정 
+                - static : 연관 배치, 위치조정
+                - relative : 연관 배치, 미세조정 가능
+                - absolute : 절대배치, 문서의 절대적인 위치에 배치
+                - fixed : 절대배치, 뷰포트(viewport)의 절대적인 위치에 배치
+                - relative, absolute, fixed는 위치를 직접 지정할 수 있다
+                    - top : 상단에서 얼만큼 떨어져 있는지를 표시
+                    - left : 좌측 ''
+                    - bottom : 하단 ''
+                    - right : 우측 ''
+            */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*입력창 검사 성공 실패 디자인*/
+/*목표 : .field에 .success / .fail이 추가된 상황에서의 디자인 */
+.field.success {
+    border-color: #32cd32 !important;
+}
+
+.field.fail,
+.field.fail2 {
+    border-color: #c0392b !important;
+}
+
+/* 기본적으로 피드백은 모두 숨김 처리 */
+.success-feedback,
+.fail-feedback,
+.fail2-feedback {
+    display: none;
+}
+
+/* 성공 피드백 디자인 */
+.success-feedback {
+    color: #32cd32;
+}
+
+/*실패 피드백 디자인*/
+.fail-feedback,
+.fail2-feedback {
+    color: #c0392b;
+}
+
+/* 검사에 성공한 입력창 뒤에 있는 성공 피드백을 표시 */
+.field.success~.success-feedback {
+    display: block;
+}
+
+/* 검사에 실패한 입력창 뒤에 있는 실패 피드백을 표시 */
+.field.fail~.fail-feedback,
+.field.fail2 ~.fail2-feedback {
+    display: block;
+}
